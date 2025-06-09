@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   preview: {
     host: true,
-    port: 4173,
+    port: 5173,
     allowedHosts: ['kovka-app-front.onrender.com']
   }
 })
