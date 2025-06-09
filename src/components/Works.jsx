@@ -9,12 +9,19 @@ const Works = () => {
 
     useEffect(() => {
         fetch('/api/items')
-            .then(res => {
-                // Для отладки: вывести заголовки и статус
+            .then(async res => {
                 console.log('Ответ сервера:', res);
-                if (!res.ok) throw new Error('Ошибка загрузки: ' + res.status);
+                if (!res.ok) {
+                    // Попробуем вывести тело ответа для диагностики
+                    const text = await res.text();
+                    console.error('Ошибка загрузки:', res.status, text);
+                    throw new Error('Ошибка загрузки: ' + res.status);
+                }
                 const contentType = res.headers.get("content-type");
                 if (!contentType || !contentType.includes("application/json")) {
+                    // Выведем тело ответа для диагностики
+                    const text = await res.text();
+                    console.error('Ответ не JSON:', text);
                     throw new Error("Сервер вернул не JSON");
                 }
                 return res.json();
