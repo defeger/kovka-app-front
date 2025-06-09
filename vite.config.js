@@ -7,6 +7,6 @@ export default defineConfig({
   preview: {
     host: true,
     port: 4173,
-    allowedHosts: ['https://kovka-app-front.onrender.com/']
+    allowedHosts: ['kovka-app-front.onrender.com']
   }
 })
