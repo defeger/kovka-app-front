@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start": "vite preview --port $PORT --host",
+    "preview": "vite preview --port 5173 --host",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "start": "cross-env PORT=${PORT:-5173} vite preview --port $PORT"
+    "sass-watch": "sass --watch .",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "firebase": "^11.9.0",
