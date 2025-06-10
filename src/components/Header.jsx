@@ -43,7 +43,7 @@ function Header() {
                 <div className="nav">
                     <ul className={`nav-list${menuOpen ? " active" : ""}`}>
                         <li><HashLink smooth to="/#works" onClick={handleNavLinkClick}>Работы</HashLink></li>
-                        <li><Link to="/cont" onClick={handleNavLinkClick}>Контакты</Link></li>
+                        <li><HashLink smooth to="/#contacts" onClick={handleNavLinkClick}>Контакты</HashLink></li>
                         {!currentUser && <li><Link to="/login" onClick={handleNavLinkClick}>Логин</Link></li>}
                         {!currentUser && <li><Link to="/reg" onClick={handleNavLinkClick}>Регистрация</Link></li>}
                         {currentUser && (
