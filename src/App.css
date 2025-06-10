@@ -425,9 +425,9 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 30px;
+  margin-bottom: 10px; /* было 30px, стало 10px */
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 8px; /* было 20px, стало 8px */
 }
 
 .footer-logo {
@@ -484,6 +484,7 @@ img {
   }
   
   .footer-links {
+    margin-right: 30px;
     gap: 30px;
   }
 }
@@ -492,18 +493,21 @@ img {
   .burger {
     display: flex;
     position: relative;
-    z-index: 2003;
+    z-index: 10; /* меньше, чем у .nav-list.active */
     width: 36px;
     height: 28px;
     justify-content: center;
     align-items: center;
-    background: rgba(255,255,255,0.04);
+    background: transparent;
     border-radius: 8px;
-    box-shadow: 0 2px 8px #0002;
-    transition: background 0.5s;
+    box-shadow: none;
+    transition: background 0.5s, z-index 0s;
+  }
+  .burger.active {
+    z-index: 2002; /* больше, чем у других элементов */
   }
   .burger:hover {
-    background: rgba(255,255,255,0.12);
+    background: transparent; /* убираем затемнение при наведении */
   }
   .burger span {
     display: block;
