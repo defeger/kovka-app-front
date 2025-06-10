@@ -38,7 +38,7 @@ const Contacts = () => {
     };
     try {
       // Изменено: отправка на /api/orders
-      const res = await fetch('/api/orders', {
+      const res = await fetch('https://kovka-app-back.onrender.com/api/orders', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(order)
