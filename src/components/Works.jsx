@@ -8,7 +8,7 @@ const Works = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('https://kovka-app-back.onrender.com')
+        fetch('https://kovka-app-back.onrender.com/api/items'')
             .then(res => {
                 // Для отладки: вывести заголовки и статус
                 console.log('Ответ сервера:', res);
