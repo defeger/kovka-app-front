@@ -427,7 +427,7 @@ img {
   align-items: flex-start;
   margin-bottom: 30px;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 }
 
 .footer-logo {
@@ -531,9 +531,7 @@ img {
   .nav-list {
     position: fixed;
     top: 0;
-    right: 0;
-    left: auto;
-    width: 70%;
+    width: 50%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.97);
     flex-direction: column;
@@ -548,7 +546,6 @@ img {
   }
   .nav-list.active {
     right: 0;
-    left: auto;
     z-index: 2001;
     transform: translateX(0);
   }
@@ -641,4 +638,12 @@ img {
 .nav-link-btn:hover,
 .nav-link-btn:focus {
   color: var(--primary);
+}
+
+/* Feedback button (дополнительно, если нужно) */
+.feedback-float-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2000;
 }

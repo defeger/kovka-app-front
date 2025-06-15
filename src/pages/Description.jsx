@@ -11,7 +11,7 @@ const Description = () => {
 
   useEffect(() => {
     // Получаем все товары, затем ищем нужный по id
-    fetch('/api/items')
+    fetch('https://kovka-app-back.onrender.com/api/items')
       .then(res => res.json())
       .then(data => {
         // Найти товар по _id

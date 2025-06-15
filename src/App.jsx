@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { AuthProvider } from './context/AuthContext';
 import Description from './pages/Description';
+import FeedbackButton from './components/FeedbackButton';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           </Routes>
           <Outlet />
         </main>
+        <FeedbackButton />
         <Footer />
       </div>
     </AuthProvider>
