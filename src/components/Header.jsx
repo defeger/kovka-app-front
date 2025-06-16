@@ -4,7 +4,7 @@ import metalica from "../media/metalica.png"
 import { HashLink } from 'react-router-hash-link';
 import { useAuth } from '../context/AuthContext'
 import { useNavigate } from 'react-router-dom'
-import "../media/fire.svg"
+import fire "../media/fire.svg"
 
 function Header() {
     const { logout, currentUser } = useAuth();
