@@ -146,12 +146,7 @@ const Description = () => {
         )}
         <h2 style={{marginBottom: 16}}>{product.title}</h2>
         <p style={{marginBottom: 24}}>{product.description || product.alt || 'Описание отсутствует.'}</p>
-        <button
-          className="btn btn-metal"
-          onClick={() => window.location.href = '/#content'}
-        >
-          Обсудить проект
-        </button>
+        <HashLink className="btn btn-metal" smooth to="/#contacts">Обсудить проект</HashLink>
       </div>
     </div>
   );
