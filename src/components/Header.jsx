@@ -4,7 +4,7 @@ import metalica from "../media/metalica.png"
 import { HashLink } from 'react-router-hash-link';
 import { useAuth } from '../context/AuthContext'
 import { useNavigate } from 'react-router-dom'
-import "../media/metalica.png"
+import "../media/fire.svg"
 
 function Header() {
     const { logout, currentUser } = useAuth();
@@ -36,7 +36,7 @@ function Header() {
         <div className="container">
             <div className="header-inner">
                 <div className="logo">
-                    <img src={metalica} alt="" />
+                    <img src={fire} alt="" />
                     <Link to="/"><h1 className="Head-h1">Стальная Вязь</h1></Link>
                 </div>
                 
