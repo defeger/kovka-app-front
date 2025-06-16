@@ -148,7 +148,7 @@ const Description = () => {
         <p style={{marginBottom: 24}}>{product.description || product.alt || 'Описание отсутствует.'}</p>
         <button
           className="btn btn-metal"
-          onClick={() => window.location.href = '/cont'}
+          onClick={() => window.location.href = '/#content'}
         >
           Обсудить проект
         </button>
