@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
-import kakulka from "../media/kakulka.png"
+import fire from "../media/fire.svg"
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="container">
             <div className="footer-content">
                 <div className="footer-logo">
-                    <img src={kakulka} alt="" />
+                    <img src={fire} alt="" />
                     <h3>Стальная Вязь</h3>
                 </div>
                 <div className="footer-links">
