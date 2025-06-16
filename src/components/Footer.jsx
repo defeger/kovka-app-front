@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
-import fire from "../media/fire.svg"
+import fire from "../media/kovka2.svg"
 
 const Footer = () => {
   return (
