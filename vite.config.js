@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
     preview: {
-    allowedHosts: ['defeger-kovka-app-front-7ddb.twc1.net'],
+    allowedHosts: ['https://defeger-kovka-app-front-7ddb.twc1.net/'],
   },
 })
